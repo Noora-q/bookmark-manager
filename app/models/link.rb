@@ -1,6 +1,7 @@
 require 'dm-migrations'
 require 'data_mapper'
 require 'dm-postgres-adapter'
+require_relative '../app'
 
 class Link
 
@@ -12,7 +13,7 @@ class Link
 
 end
 
-DataMapper.setup(:default, "postgres://localhost/bookmark_manager_test")
+DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{ENV['RACK_ENV']}")
 
 DataMapper.finalize
 
