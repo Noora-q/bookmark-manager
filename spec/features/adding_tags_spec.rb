@@ -1,3 +1,7 @@
+# As a time-pressed user
+# So that I can organise my many links into different categories for ease of search
+# I would like to add tags to the links in my bookmark manager
+
 feature 'Adding tags' do
 
   scenario 'I can add a single tag to a new link' do
