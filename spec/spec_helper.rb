@@ -1,9 +1,10 @@
 
 ENV['RACK_ENV'] = "test"
 
+require 'database_cleaner'
 require 'capybara/rspec'
 require './app/models/link'
-require 'database_cleaner'
+
 
 require File.join(File.dirname(__FILE__), '..', 'app/app.rb')
 
